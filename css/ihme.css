@@ -1,0 +1,56 @@
+body{
+	font-size: 12dp;
+	max-width: 625px;
+}
+.axis text {
+font: 10px arial, sans-serif;
+}
+
+.axis line,
+.axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.label{
+	margin: auto;
+}
+.select{
+/*	position: absolute;
+	top: 55px;
+	left: 25px;*/
+	width: 360px;
+	text-align: center;
+}
+.page_header{
+	font-size: 1.8em;
+	font-weight: bold;
+	width: 450px;
+}
+.tooltip{
+	position: absolute;
+	pointer-events: none;
+	background-color: #ecf0f1;
+	border: 3px solid #bdc3c7;
+	padding: 5px;
+	width: 185px;
+}
+.male_bar{
+	fill: #75b9e7;
+}
+.female_bar{
+	fill: #ef8b80;
+}
+.bar:hover{
+	stroke: #7f8c8d;
+}
+.page_info{
+	position: absolute;
+	right: 0px;
+	top: 5px;
+	color: #b9efd0;
+}
+.page_info:hover{
+	cursor: pointer;
+	color: #2ecc71;
+}

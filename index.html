@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<head>
+	<link rel="stylesheet" type="text/css" href="/css/ihme.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+</head>
+
+<body>
+	
+	<!-- <i class="fa fa-info-circle icon page_info"></i> -->
+	<div class="label page_header">
+		Prevalence of Overweight Teenagers
+	</div>
+	<div class="label select">
+		Selected Country:
+		<select id="country_code">
+			<option value="101">Canada (CAN)</option>
+			<option value="130">Mexico (MEX)</option>
+			<option value="96">Southern Latin America (R13)</option>
+			<option value="102" selected="selected">United States of America (USA)</option>
+		</select>
+	</div>
+
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+var margin = {left:50, bottom:25, top:35};
+var w = 550;
+var h = 550;
+var spacing = 5;
+
+var svg = d3.select("body").append("svg")
+	.attr("width", w + margin.left * 2)
+	.attr("height", margin.top + h + margin.bottom * 2)
+  .append("g")
+	.attr("transform", "translate(" + margin.left + "," + margin.bottom + ")");
+
+//make these more obvious
+var x1 = d3.scale.linear()
+	.domain([0, 0.5])
+	.range([(w / 2), 0]);
+var xAxis1 = d3.svg.axis()
+	.scale(x1)
+	.ticks(4)
+	.tickFormat(d3.format("p"))
+	.orient("bottom");
+
+var x2 = d3.scale.linear()
+	.domain([0, 0.5])
+	.range([0, (w / 2)]);
+var xAxis2 = d3.svg.axis()
+	.scale(x2)
+	.tickValues([0.1, 0.2, 0.3, 0.4, 0.5]) //don't want 0.0 to overlap
+	.tickFormat(d3.format("p"))
+	.orient("bottom");
+
+var y = d3.scale.linear()
+	.domain([2013, 1990])
+	.range([h, 0]);
+var yAxis = d3.svg.axis()
+	.scale(y)
+	.ticks(9)
+	.tickFormat(d3.format("d"))
+	.orient("left");
+
+var tooltip = d3.select("body").append("div")
+	.attr("class", "tooltip")
+	.style("opacity", 0);
+
+var male_data = {};
+var female_data = {};
+
+var alertChange = function(country) {
+ 	svg.selectAll("rect").remove();
+    updateChart(country);
+}
+
+var updateChart = function(location){
+	svg.append("g")
+ 		.attr("class", "axis")
+ 		.attr("transform", "translate(0," + h + ")")
+ 		.call(xAxis1);
+	
+	svg.append("g")
+ 		.attr("class", "axis")
+ 		.attr("transform", "translate("+ (w / 2) + "," + h + ")")
+ 		.call(xAxis2);
+
+	svg.append("g")
+ 		.attr("class", "axis")
+ 		.call(yAxis);
+
+ 	svg.selectAll("rect.male")
+		.data(male_data[location])
+		.enter()
+	  .append("rect")
+	 	.on("mouseover", function(d){
+	 		tooltip.transition()
+	 		  .duration(150)
+	 		  .style("opacity", 0.90);
+	 		tooltip.html('Country: ' + d.location_name + '<br>Specified Gender: ' + d.sex + '</br>Year: ' + d.year + '<br>Weight Class: ' + d.metric + '<br>% of Pop: ' + d.mean)
+	 		  .style("left", (d3.event.x + 40) + "px")
+	 		  .style("top", (d3.event.y - 20) + "px");
+	 	})
+	 	.on("mouseout", function(d){
+	 		tooltip.transition()
+	 		  .duration(250)
+	 		  .style("opacity", 0.0);
+	 	})
+	    .attr("class", "bar male_bar")
+	    .attr("x", (w / 2))
+	    .attr("y", function(d, i){
+	   		return i * (h / (male_data[location].length));
+	    })
+	    .attr("width", function(d){
+	   		return Number((w / 2 / 50) * (d.mean));
+	    })
+	    .attr("height", (h / (male_data[location].length) - spacing));
+
+	svg.selectAll("rect.female")
+		.data(female_data[location])
+		.enter()
+	  .append("rect")
+	    .on("mouseover", function(d){
+	 		tooltip.transition()
+	 		  .duration(150)
+	 		  .style("opacity", 0.90);
+	 		tooltip.html('Country: ' + d.location_name + '<br>Specified Gender: ' + d.sex + '</br>Year: ' + d.year + '<br>Weight Class: ' + d.metric + '<br>% of Pop: ' + d.mean)
+	 		  .style("left", (d3.event.x - 240) + "px")
+	 		  .style("top", (d3.event.y - 23) + "px");
+	 	})
+	 	.on("mouseout", function(d){
+	 		tooltip.transition()
+	 		  .duration(250)
+	 		  .style("opacity", 0.0);
+	 	})
+		.attr("class", "bar female_bar")
+		.attr("x", 0)
+		.attr("y", function(d, i){
+			return i * (h / (female_data[location].length));
+		})
+		.attr("width", function(d){
+			return Number((w / 2 / 50) * (d.mean));
+		})
+    	.attr("transform", function(d) {
+			return ("translate(" + ((w / 2) - Number((w / 2 / 50) * (d.mean))) + ",0)")
+    	}) 
+	    .attr("height", (h / (female_data[location].length) - spacing));
+
+	svg.append("text")
+		.attr("x", w / 2)
+		.attr("y", h + (margin.top))
+		.style("text-anchor", "middle")
+		.text("Percentage(%) of teenage population");
+	
+	function translate(d) {
+		return ("translate(" + ((w / 2) - Number((w / 2 / 100) * (d.mean * 100))) + ",0)")
+	};
+};
+
+d3.select("#country_code").on('change', function(){
+  	var data = eval(d3.select(this).property('value'));
+  	alertChange(data);
+});
+
+d3.csv("data/IHME-data-teens-americas.csv", function(error, data) {
+	if (error) {
+		return console.warn(error);
+	} else {
+		data.forEach(function(d) {
+			if(d.sex_id == 1 && d.metric == 'overweight'){
+				if(typeof male_data[d.location_id] === 'undefined'){
+					male_data[d.location_id] = [];
+				}
+				male_data[d.location_id].push({
+					location_id:d.location_id,
+					location_name:d.location_name,
+					sex:d.sex,
+					year:d.year,
+					age_group:d.age_group,
+					metric:d.metric,
+					mean:(parseFloat(d.mean * 100.0).toFixed(2))
+				});
+			} else if (d.sex_id == 2 && d.metric == 'overweight'){
+				if(typeof female_data[d.location_id] === 'undefined'){
+					female_data[d.location_id] = [];
+				}
+				female_data[d.location_id].push({
+					location_id:d.location_id,
+					location_name:d.location_name,
+					sex:d.sex,
+					year:d.year,
+					age_group:d.age_group,
+					metric:d.metric,
+					mean:(parseFloat(d.mean * 100.0).toFixed(2))
+				});
+			}
+		});
+		updateChart(102); //initialize chart looking at USA
+	}
+});
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/ihme.js" defer></script>
+
+</body>
