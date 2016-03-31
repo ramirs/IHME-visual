@@ -2,6 +2,7 @@ body{
 	font-size: 14dp;
 	max-width: 625px;
 	font-family: 'Roboto Condensed', 'Lato', helvetica, arial, sans-serif;
+	margin: auto;
 }
 .axis text {
 	font: 10px arial, sans-serif;
@@ -15,6 +16,27 @@ body{
 .label{
 	margin: auto;
 }
+.legend{
+	position: relative;
+	width: 75px;
+	border: 1px solid black;
+	left: 550px;
+	top: 100px;
+	padding: 5px;
+	border-radius: 3px;
+}
+.legend_icon{
+	width: 20px;
+	height: 15px;
+	display: inline-block;
+	margin-right: 5px;
+}
+.legend_male{
+	background-color: #75b9e7;
+}
+.legend_female{
+	background-color: #ef8b80;
+}
 .select{
 	width: 360px;
 	text-align: center;
@@ -24,6 +46,7 @@ body{
 	font-weight: bold;
 	width: 600px;
 	margin: auto;
+	text-align: center;
 }
 .tooltip{
 	position: absolute;

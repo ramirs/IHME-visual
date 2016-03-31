@@ -7,8 +7,11 @@
 </head>
 
 <body>
-	
 	<!-- <i class="fa fa-info-circle icon page_info"></i> -->
+	<div class="legend">
+		<div class="legend_icon legend_female"></div>Female<br>
+		<div class="legend_icon legend_male"></div>Male
+	</div>
 	<div class="label page_header">
 		Prevalence of Overweight Teenagers (population age 15-19)
 	</div>
@@ -30,12 +33,12 @@ var h = 550;
 var spacing = 5;
 
 var svg = d3.select("body").append("svg")
+	//extra margin added for visibility, could try padding instead
 	.attr("width", w + margin.left * 2)
 	.attr("height", margin.top + h + margin.bottom * 2)
   .append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.bottom + ")");
 
-//make these more obvious
 var x1 = d3.scale.linear()
 	.domain([0, 0.5])
 	.range([(w / 2), 0]);
@@ -45,12 +48,14 @@ var xAxis1 = d3.svg.axis()
 	.tickFormat(d3.format("p"))
 	.orient("bottom");
 
+//reversed xAxis
 var x2 = d3.scale.linear()
 	.domain([0, 0.5])
 	.range([0, (w / 2)]);
 var xAxis2 = d3.svg.axis()
 	.scale(x2)
-	.tickValues([0.1, 0.2, 0.3, 0.4, 0.5]) //don't want 0.0 to overlap
+	//don't want 0.0 to overlap, so set custom values
+	.tickValues([0.1, 0.2, 0.3, 0.4, 0.5]) 
 	.tickFormat(d3.format("p"))
 	.orient("bottom");
 
