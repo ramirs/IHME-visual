@@ -1,31 +1,29 @@
 body{
-	font-size: 12dp;
+	font-size: 14dp;
 	max-width: 625px;
+	font-family: 'Roboto Condensed', 'Lato', helvetica, arial, sans-serif;
 }
 .axis text {
-font: 10px arial, sans-serif;
+	font: 10px arial, sans-serif;
 }
-
 .axis line,
 .axis path {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
+	fill: none;
+  	stroke: #000;
+  	shape-rendering: crispEdges;
 }
 .label{
 	margin: auto;
 }
 .select{
-/*	position: absolute;
-	top: 55px;
-	left: 25px;*/
 	width: 360px;
 	text-align: center;
 }
 .page_header{
-	font-size: 1.8em;
+	font-size: 1.4em;
 	font-weight: bold;
-	width: 450px;
+	width: 600px;
+	margin: auto;
 }
 .tooltip{
 	position: absolute;
