@@ -143,150 +143,294 @@ location_id,location,location_name,year,age_group_id,age_group,age_start,age_end
 101,CAN,Canada,2013,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.091,0.062,0.128
 101,CAN,Canada,2013,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.096,0.074,0.119
 101,CAN,Canada,2013,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.23,0.186,0.281
-130,MEX,Mexico,1990,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.077,0.05,0.112
-130,MEX,Mexico,1990,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.239,0.174,0.317
-130,MEX,Mexico,1990,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.153,0.118,0.197
-130,MEX,Mexico,1990,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.035,0.025,0.049
-130,MEX,Mexico,1990,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.056,0.041,0.076
-130,MEX,Mexico,1990,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.196,0.157,0.24
-130,MEX,Mexico,1991,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.077,0.051,0.111
-130,MEX,Mexico,1991,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.242,0.178,0.322
-130,MEX,Mexico,1991,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.164,0.127,0.209
-130,MEX,Mexico,1991,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.038,0.026,0.054
-130,MEX,Mexico,1991,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.058,0.043,0.077
-130,MEX,Mexico,1991,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.203,0.163,0.248
-130,MEX,Mexico,1992,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.246,0.181,0.326
-130,MEX,Mexico,1992,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.078,0.052,0.112
-130,MEX,Mexico,1992,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.177,0.135,0.224
-130,MEX,Mexico,1992,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.042,0.028,0.058
-130,MEX,Mexico,1992,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.212,0.17,0.259
-130,MEX,Mexico,1992,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.06,0.045,0.08
-130,MEX,Mexico,1993,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.078,0.052,0.112
-130,MEX,Mexico,1993,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.25,0.184,0.327
-130,MEX,Mexico,1993,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.045,0.031,0.064
-130,MEX,Mexico,1993,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.191,0.148,0.24
-130,MEX,Mexico,1993,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.221,0.179,0.268
-130,MEX,Mexico,1993,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.062,0.046,0.082
-130,MEX,Mexico,1994,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.079,0.052,0.113
-130,MEX,Mexico,1994,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.254,0.186,0.329
-130,MEX,Mexico,1994,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.207,0.16,0.257
-130,MEX,Mexico,1994,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.05,0.033,0.069
-130,MEX,Mexico,1994,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.231,0.189,0.279
-130,MEX,Mexico,1994,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.064,0.049,0.084
-130,MEX,Mexico,1995,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.256,0.189,0.331
-130,MEX,Mexico,1995,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.079,0.052,0.113
-130,MEX,Mexico,1995,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.054,0.037,0.074
-130,MEX,Mexico,1995,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.222,0.177,0.273
-130,MEX,Mexico,1995,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.239,0.198,0.286
-130,MEX,Mexico,1995,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.067,0.05,0.085
-130,MEX,Mexico,1996,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.08,0.054,0.112
-130,MEX,Mexico,1996,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.258,0.192,0.336
-130,MEX,Mexico,1996,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.236,0.192,0.287
-130,MEX,Mexico,1996,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.058,0.041,0.079
-130,MEX,Mexico,1996,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.069,0.053,0.088
-130,MEX,Mexico,1996,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.248,0.207,0.293
-130,MEX,Mexico,1997,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.08,0.054,0.112
-130,MEX,Mexico,1997,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.261,0.197,0.335
-130,MEX,Mexico,1997,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.248,0.207,0.297
-130,MEX,Mexico,1997,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.061,0.046,0.082
-130,MEX,Mexico,1997,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.255,0.216,0.298
-130,MEX,Mexico,1997,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.071,0.055,0.089
-130,MEX,Mexico,1998,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.081,0.054,0.112
-130,MEX,Mexico,1998,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.265,0.202,0.337
-130,MEX,Mexico,1998,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.258,0.22,0.303
-130,MEX,Mexico,1998,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.064,0.049,0.084
-130,MEX,Mexico,1998,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.262,0.223,0.302
-130,MEX,Mexico,1998,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.073,0.057,0.091
-130,MEX,Mexico,1999,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.269,0.209,0.338
-130,MEX,Mexico,1999,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.082,0.056,0.113
-130,MEX,Mexico,1999,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.267,0.23,0.309
-130,MEX,Mexico,1999,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.067,0.052,0.086
-130,MEX,Mexico,1999,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.074,0.06,0.091
-130,MEX,Mexico,1999,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.268,0.232,0.306
-130,MEX,Mexico,2000,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.083,0.057,0.114
-130,MEX,Mexico,2000,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.273,0.217,0.336
-130,MEX,Mexico,2000,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.07,0.054,0.088
-130,MEX,Mexico,2000,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.275,0.238,0.317
-130,MEX,Mexico,2000,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.274,0.239,0.311
-130,MEX,Mexico,2000,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.076,0.062,0.093
-130,MEX,Mexico,2001,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.084,0.059,0.114
-130,MEX,Mexico,2001,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.278,0.225,0.338
-130,MEX,Mexico,2001,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.073,0.056,0.092
-130,MEX,Mexico,2001,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.282,0.245,0.326
-130,MEX,Mexico,2001,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.079,0.064,0.095
-130,MEX,Mexico,2001,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.28,0.248,0.316
-130,MEX,Mexico,2002,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.282,0.232,0.336
-130,MEX,Mexico,2002,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.085,0.061,0.114
-130,MEX,Mexico,2002,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.076,0.059,0.096
-130,MEX,Mexico,2002,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.287,0.25,0.33
-130,MEX,Mexico,2002,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.285,0.254,0.317
-130,MEX,Mexico,2002,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.08,0.065,0.097
-130,MEX,Mexico,2003,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.085,0.063,0.114
-130,MEX,Mexico,2003,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.285,0.236,0.334
-130,MEX,Mexico,2003,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.293,0.255,0.335
-130,MEX,Mexico,2003,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.08,0.063,0.101
-130,MEX,Mexico,2003,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.083,0.068,0.099
-130,MEX,Mexico,2003,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.289,0.258,0.32
-130,MEX,Mexico,2004,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.287,0.241,0.339
-130,MEX,Mexico,2004,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.086,0.064,0.113
-130,MEX,Mexico,2004,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.299,0.259,0.343
-130,MEX,Mexico,2004,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.083,0.066,0.106
-130,MEX,Mexico,2004,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.293,0.262,0.325
-130,MEX,Mexico,2004,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.085,0.07,0.102
-130,MEX,Mexico,2005,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.289,0.243,0.339
-130,MEX,Mexico,2005,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.086,0.064,0.114
-130,MEX,Mexico,2005,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.086,0.068,0.109
-130,MEX,Mexico,2005,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.304,0.26,0.351
-130,MEX,Mexico,2005,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.086,0.071,0.104
-130,MEX,Mexico,2005,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.297,0.265,0.33
-130,MEX,Mexico,2006,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.086,0.063,0.115
-130,MEX,Mexico,2006,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.292,0.242,0.347
-130,MEX,Mexico,2006,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.09,0.07,0.113
-130,MEX,Mexico,2006,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.31,0.264,0.363
-130,MEX,Mexico,2006,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.301,0.265,0.337
-130,MEX,Mexico,2006,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.088,0.072,0.107
-130,MEX,Mexico,2007,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.294,0.243,0.35
-130,MEX,Mexico,2007,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.087,0.063,0.117
-130,MEX,Mexico,2007,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.092,0.071,0.118
-130,MEX,Mexico,2007,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.314,0.265,0.369
-130,MEX,Mexico,2007,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.304,0.267,0.341
-130,MEX,Mexico,2007,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.09,0.073,0.11
-130,MEX,Mexico,2008,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.298,0.243,0.354
-130,MEX,Mexico,2008,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.089,0.064,0.118
-130,MEX,Mexico,2008,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.096,0.072,0.123
-130,MEX,Mexico,2008,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.32,0.265,0.378
-130,MEX,Mexico,2008,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.309,0.27,0.349
-130,MEX,Mexico,2008,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.092,0.074,0.114
-130,MEX,Mexico,2009,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.3,0.243,0.358
-130,MEX,Mexico,2009,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.09,0.064,0.12
-130,MEX,Mexico,2009,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.323,0.267,0.38
-130,MEX,Mexico,2009,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.098,0.072,0.126
-130,MEX,Mexico,2009,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.094,0.075,0.117
-130,MEX,Mexico,2009,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.312,0.271,0.352
-130,MEX,Mexico,2010,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.302,0.245,0.361
-130,MEX,Mexico,2010,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.091,0.065,0.123
-130,MEX,Mexico,2010,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.099,0.072,0.131
-130,MEX,Mexico,2010,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.326,0.271,0.383
-130,MEX,Mexico,2010,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.095,0.076,0.118
-130,MEX,Mexico,2010,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.314,0.274,0.356
-130,MEX,Mexico,2011,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.303,0.246,0.368
-130,MEX,Mexico,2011,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.092,0.066,0.125
-130,MEX,Mexico,2011,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.328,0.268,0.389
-130,MEX,Mexico,2011,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.101,0.072,0.134
-130,MEX,Mexico,2011,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.096,0.076,0.119
-130,MEX,Mexico,2011,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.316,0.274,0.36
-130,MEX,Mexico,2012,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.093,0.067,0.127
-130,MEX,Mexico,2012,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.304,0.245,0.372
-130,MEX,Mexico,2012,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.33,0.265,0.396
-130,MEX,Mexico,2012,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.102,0.071,0.137
-130,MEX,Mexico,2012,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.317,0.272,0.365
-130,MEX,Mexico,2012,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.097,0.075,0.121
-130,MEX,Mexico,2013,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.093,0.067,0.13
-130,MEX,Mexico,2013,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.305,0.243,0.373
-130,MEX,Mexico,2013,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.331,0.263,0.4
-130,MEX,Mexico,2013,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.102,0.071,0.142
-130,MEX,Mexico,2013,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.318,0.27,0.37
-130,MEX,Mexico,2013,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.098,0.076,0.122
+120,R11,Andean Latin America,1990,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.124,0.098,0.156
+120,R11,Andean Latin America,1990,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.031,0.023,0.041
+120,R11,Andean Latin America,1990,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.215,0.18,0.251
+120,R11,Andean Latin America,1990,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.032,0.024,0.041
+120,R11,Andean Latin America,1990,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.031,0.026,0.038
+120,R11,Andean Latin America,1990,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.169,0.146,0.192
+120,R11,Andean Latin America,1991,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.124,0.099,0.155
+120,R11,Andean Latin America,1991,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.031,0.023,0.041
+120,R11,Andean Latin America,1991,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.217,0.184,0.254
+120,R11,Andean Latin America,1991,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.032,0.025,0.041
+120,R11,Andean Latin America,1991,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.17,0.148,0.193
+120,R11,Andean Latin America,1991,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.031,0.026,0.038
+120,R11,Andean Latin America,1992,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.124,0.099,0.154
+120,R11,Andean Latin America,1992,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.031,0.023,0.041
+120,R11,Andean Latin America,1992,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.22,0.188,0.256
+120,R11,Andean Latin America,1992,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.032,0.025,0.041
+120,R11,Andean Latin America,1992,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.172,0.15,0.195
+120,R11,Andean Latin America,1992,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.031,0.026,0.038
+120,R11,Andean Latin America,1993,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.031,0.023,0.04
+120,R11,Andean Latin America,1993,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.125,0.101,0.156
+120,R11,Andean Latin America,1993,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.226,0.194,0.259
+120,R11,Andean Latin America,1993,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.032,0.024,0.041
+120,R11,Andean Latin America,1993,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.031,0.026,0.038
+120,R11,Andean Latin America,1993,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.175,0.153,0.197
+120,R11,Andean Latin America,1994,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.126,0.101,0.155
+120,R11,Andean Latin America,1994,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.031,0.024,0.041
+120,R11,Andean Latin America,1994,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.233,0.202,0.266
+120,R11,Andean Latin America,1994,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.032,0.025,0.041
+120,R11,Andean Latin America,1994,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.032,0.026,0.038
+120,R11,Andean Latin America,1994,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.179,0.157,0.201
+120,R11,Andean Latin America,1995,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.126,0.101,0.156
+120,R11,Andean Latin America,1995,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.031,0.024,0.042
+120,R11,Andean Latin America,1995,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.24,0.211,0.273
+120,R11,Andean Latin America,1995,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.032,0.025,0.041
+120,R11,Andean Latin America,1995,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.032,0.027,0.038
+120,R11,Andean Latin America,1995,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.183,0.162,0.204
+120,R11,Andean Latin America,1996,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.127,0.101,0.156
+120,R11,Andean Latin America,1996,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.032,0.024,0.042
+120,R11,Andean Latin America,1996,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.032,0.026,0.041
+120,R11,Andean Latin America,1996,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.249,0.221,0.28
+120,R11,Andean Latin America,1996,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.187,0.166,0.207
+120,R11,Andean Latin America,1996,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.032,0.027,0.038
+120,R11,Andean Latin America,1997,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.125,0.099,0.154
+120,R11,Andean Latin America,1997,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.031,0.024,0.042
+120,R11,Andean Latin America,1997,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.033,0.026,0.041
+120,R11,Andean Latin America,1997,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.258,0.23,0.287
+120,R11,Andean Latin America,1997,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.032,0.027,0.038
+120,R11,Andean Latin America,1997,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.191,0.17,0.21
+120,R11,Andean Latin America,1998,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.123,0.097,0.151
+120,R11,Andean Latin America,1998,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.031,0.023,0.041
+120,R11,Andean Latin America,1998,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.033,0.026,0.041
+120,R11,Andean Latin America,1998,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.264,0.237,0.291
+120,R11,Andean Latin America,1998,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.193,0.173,0.211
+120,R11,Andean Latin America,1998,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.032,0.027,0.038
+120,R11,Andean Latin America,1999,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.031,0.023,0.04
+120,R11,Andean Latin America,1999,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.123,0.097,0.15
+120,R11,Andean Latin America,1999,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.269,0.243,0.295
+120,R11,Andean Latin America,1999,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.033,0.026,0.04
+120,R11,Andean Latin America,1999,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.195,0.176,0.213
+120,R11,Andean Latin America,1999,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.032,0.027,0.038
+120,R11,Andean Latin America,2000,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.031,0.023,0.04
+120,R11,Andean Latin America,2000,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.123,0.098,0.15
+120,R11,Andean Latin America,2000,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.272,0.248,0.295
+120,R11,Andean Latin America,2000,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.033,0.026,0.04
+120,R11,Andean Latin America,2000,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.197,0.179,0.215
+120,R11,Andean Latin America,2000,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.032,0.027,0.038
+120,R11,Andean Latin America,2001,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.031,0.023,0.041
+120,R11,Andean Latin America,2001,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.124,0.099,0.152
+120,R11,Andean Latin America,2001,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.033,0.026,0.04
+120,R11,Andean Latin America,2001,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.272,0.249,0.295
+120,R11,Andean Latin America,2001,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.032,0.027,0.038
+120,R11,Andean Latin America,2001,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.197,0.179,0.216
+120,R11,Andean Latin America,2002,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.124,0.099,0.153
+120,R11,Andean Latin America,2002,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.031,0.023,0.041
+120,R11,Andean Latin America,2002,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.27,0.249,0.294
+120,R11,Andean Latin America,2002,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.033,0.027,0.04
+120,R11,Andean Latin America,2002,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.032,0.027,0.038
+120,R11,Andean Latin America,2002,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.196,0.178,0.216
+120,R11,Andean Latin America,2003,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.124,0.098,0.156
+120,R11,Andean Latin America,2003,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.031,0.023,0.041
+120,R11,Andean Latin America,2003,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.033,0.027,0.04
+120,R11,Andean Latin America,2003,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.267,0.245,0.291
+120,R11,Andean Latin America,2003,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.032,0.027,0.038
+120,R11,Andean Latin America,2003,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.195,0.176,0.214
+120,R11,Andean Latin America,2004,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.125,0.098,0.157
+120,R11,Andean Latin America,2004,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.031,0.023,0.04
+120,R11,Andean Latin America,2004,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.265,0.243,0.287
+120,R11,Andean Latin America,2004,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.033,0.028,0.04
+120,R11,Andean Latin America,2004,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.194,0.176,0.213
+120,R11,Andean Latin America,2004,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.032,0.027,0.038
+120,R11,Andean Latin America,2005,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.031,0.024,0.041
+120,R11,Andean Latin America,2005,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.127,0.099,0.159
+120,R11,Andean Latin America,2005,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.264,0.243,0.285
+120,R11,Andean Latin America,2005,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.034,0.028,0.04
+120,R11,Andean Latin America,2005,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.194,0.176,0.213
+120,R11,Andean Latin America,2005,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.032,0.028,0.038
+120,R11,Andean Latin America,2006,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.032,0.024,0.041
+120,R11,Andean Latin America,2006,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.128,0.099,0.159
+120,R11,Andean Latin America,2006,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.034,0.029,0.04
+120,R11,Andean Latin America,2006,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.264,0.243,0.285
+120,R11,Andean Latin America,2006,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.195,0.177,0.213
+120,R11,Andean Latin America,2006,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.033,0.028,0.039
+120,R11,Andean Latin America,2007,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.129,0.102,0.159
+120,R11,Andean Latin America,2007,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.032,0.024,0.042
+120,R11,Andean Latin America,2007,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.035,0.029,0.041
+120,R11,Andean Latin America,2007,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.265,0.242,0.286
+120,R11,Andean Latin America,2007,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.196,0.179,0.215
+120,R11,Andean Latin America,2007,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.033,0.029,0.039
+120,R11,Andean Latin America,2008,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.032,0.025,0.042
+120,R11,Andean Latin America,2008,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.13,0.104,0.159
+120,R11,Andean Latin America,2008,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.036,0.03,0.042
+120,R11,Andean Latin America,2008,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.267,0.244,0.29
+120,R11,Andean Latin America,2008,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.198,0.18,0.216
+120,R11,Andean Latin America,2008,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.034,0.029,0.04
+120,R11,Andean Latin America,2009,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.032,0.025,0.042
+120,R11,Andean Latin America,2009,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.132,0.105,0.162
+120,R11,Andean Latin America,2009,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.269,0.246,0.295
+120,R11,Andean Latin America,2009,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.037,0.031,0.043
+120,R11,Andean Latin America,2009,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.199,0.181,0.218
+120,R11,Andean Latin America,2009,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.035,0.03,0.041
+120,R11,Andean Latin America,2010,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.133,0.107,0.163
+120,R11,Andean Latin America,2010,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.033,0.025,0.043
+120,R11,Andean Latin America,2010,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.038,0.032,0.045
+120,R11,Andean Latin America,2010,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.272,0.247,0.3
+120,R11,Andean Latin America,2010,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.202,0.183,0.221
+120,R11,Andean Latin America,2010,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.036,0.031,0.041
+120,R11,Andean Latin America,2011,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.135,0.109,0.164
+120,R11,Andean Latin America,2011,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.033,0.025,0.043
+120,R11,Andean Latin America,2011,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.276,0.249,0.305
+120,R11,Andean Latin America,2011,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.04,0.033,0.048
+120,R11,Andean Latin America,2011,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.204,0.185,0.224
+120,R11,Andean Latin America,2011,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.036,0.031,0.043
+120,R11,Andean Latin America,2012,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.136,0.11,0.167
+120,R11,Andean Latin America,2012,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.033,0.026,0.044
+120,R11,Andean Latin America,2012,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.28,0.251,0.311
+120,R11,Andean Latin America,2012,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.041,0.034,0.049
+120,R11,Andean Latin America,2012,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.207,0.187,0.227
+120,R11,Andean Latin America,2012,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.037,0.032,0.044
+120,R11,Andean Latin America,2013,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.137,0.112,0.167
+120,R11,Andean Latin America,2013,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.034,0.026,0.044
+120,R11,Andean Latin America,2013,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.283,0.253,0.319
+120,R11,Andean Latin America,2013,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.042,0.034,0.051
+120,R11,Andean Latin America,2013,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.209,0.188,0.232
+120,R11,Andean Latin America,2013,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.038,0.032,0.045
+124,R12,Central Latin America,1990,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.177,0.14,0.222
+124,R12,Central Latin America,1990,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.055,0.04,0.074
+124,R12,Central Latin America,1990,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.038,0.031,0.046
+124,R12,Central Latin America,1990,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.176,0.152,0.202
+124,R12,Central Latin America,1990,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.046,0.038,0.057
+124,R12,Central Latin America,1990,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.176,0.154,0.203
+124,R12,Central Latin America,1991,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.055,0.04,0.074
+124,R12,Central Latin America,1991,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.179,0.143,0.224
+124,R12,Central Latin America,1991,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.183,0.157,0.211
+124,R12,Central Latin America,1991,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.04,0.032,0.049
+124,R12,Central Latin America,1991,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.181,0.158,0.208
+124,R12,Central Latin America,1991,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.048,0.039,0.058
+124,R12,Central Latin America,1992,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.182,0.145,0.226
+124,R12,Central Latin America,1992,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.055,0.041,0.074
+124,R12,Central Latin America,1992,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.042,0.034,0.051
+124,R12,Central Latin America,1992,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.191,0.164,0.22
+124,R12,Central Latin America,1992,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.049,0.04,0.059
+124,R12,Central Latin America,1992,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.187,0.163,0.213
+124,R12,Central Latin America,1993,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.056,0.041,0.073
+124,R12,Central Latin America,1993,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.183,0.146,0.226
+124,R12,Central Latin America,1993,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.044,0.035,0.054
+124,R12,Central Latin America,1993,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.201,0.172,0.229
+124,R12,Central Latin America,1993,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.05,0.041,0.061
+124,R12,Central Latin America,1993,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.192,0.169,0.218
+124,R12,Central Latin America,1994,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.056,0.041,0.074
+124,R12,Central Latin America,1994,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.185,0.149,0.227
+124,R12,Central Latin America,1994,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.21,0.181,0.24
+124,R12,Central Latin America,1994,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.046,0.037,0.056
+124,R12,Central Latin America,1994,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.051,0.042,0.061
+124,R12,Central Latin America,1994,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.197,0.175,0.224
+124,R12,Central Latin America,1995,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.186,0.149,0.227
+124,R12,Central Latin America,1995,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.056,0.042,0.073
+124,R12,Central Latin America,1995,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.219,0.192,0.25
+124,R12,Central Latin America,1995,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.048,0.039,0.059
+124,R12,Central Latin America,1995,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.052,0.043,0.062
+124,R12,Central Latin America,1995,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.202,0.179,0.228
+124,R12,Central Latin America,1996,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.187,0.15,0.229
+124,R12,Central Latin America,1996,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.056,0.042,0.073
+124,R12,Central Latin America,1996,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.227,0.201,0.257
+124,R12,Central Latin America,1996,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.051,0.041,0.062
+124,R12,Central Latin America,1996,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.053,0.044,0.063
+124,R12,Central Latin America,1996,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.207,0.185,0.231
+124,R12,Central Latin America,1997,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.188,0.153,0.232
+124,R12,Central Latin America,1997,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.056,0.042,0.073
+124,R12,Central Latin America,1997,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.234,0.209,0.261
+124,R12,Central Latin America,1997,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.053,0.044,0.064
+124,R12,Central Latin America,1997,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.054,0.046,0.064
+124,R12,Central Latin America,1997,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.211,0.189,0.233
+124,R12,Central Latin America,1998,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.056,0.043,0.073
+124,R12,Central Latin America,1998,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.19,0.158,0.23
+124,R12,Central Latin America,1998,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.238,0.215,0.265
+124,R12,Central Latin America,1998,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.055,0.046,0.065
+124,R12,Central Latin America,1998,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.056,0.047,0.065
+124,R12,Central Latin America,1998,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.214,0.193,0.236
+124,R12,Central Latin America,1999,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.192,0.162,0.23
+124,R12,Central Latin America,1999,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.057,0.044,0.074
+124,R12,Central Latin America,1999,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.242,0.22,0.268
+124,R12,Central Latin America,1999,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.056,0.047,0.066
+124,R12,Central Latin America,1999,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.217,0.197,0.239
+124,R12,Central Latin America,1999,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.057,0.049,0.066
+124,R12,Central Latin America,2000,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.058,0.044,0.074
+124,R12,Central Latin America,2000,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.194,0.165,0.228
+124,R12,Central Latin America,2000,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.246,0.223,0.271
+124,R12,Central Latin America,2000,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.058,0.049,0.068
+124,R12,Central Latin America,2000,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.058,0.05,0.066
+124,R12,Central Latin America,2000,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.22,0.201,0.24
+124,R12,Central Latin America,2001,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.197,0.17,0.229
+124,R12,Central Latin America,2001,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.058,0.045,0.074
+124,R12,Central Latin America,2001,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.06,0.051,0.071
+124,R12,Central Latin America,2001,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.249,0.227,0.275
+124,R12,Central Latin America,2001,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.223,0.205,0.242
+124,R12,Central Latin America,2001,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.059,0.051,0.068
+124,R12,Central Latin America,2002,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.059,0.047,0.074
+124,R12,Central Latin America,2002,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.198,0.173,0.228
+124,R12,Central Latin America,2002,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.251,0.229,0.277
+124,R12,Central Latin America,2002,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.062,0.052,0.072
+124,R12,Central Latin America,2002,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.225,0.207,0.243
+124,R12,Central Latin America,2002,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.06,0.052,0.069
+124,R12,Central Latin America,2003,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.059,0.047,0.074
+124,R12,Central Latin America,2003,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.199,0.174,0.228
+124,R12,Central Latin America,2003,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.064,0.054,0.075
+124,R12,Central Latin America,2003,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.254,0.231,0.277
+124,R12,Central Latin America,2003,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.061,0.054,0.07
+124,R12,Central Latin America,2003,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.227,0.209,0.244
+124,R12,Central Latin America,2004,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.06,0.048,0.073
+124,R12,Central Latin America,2004,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.201,0.176,0.229
+124,R12,Central Latin America,2004,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.066,0.056,0.077
+124,R12,Central Latin America,2004,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.256,0.232,0.281
+124,R12,Central Latin America,2004,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.063,0.055,0.071
+124,R12,Central Latin America,2004,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.229,0.211,0.247
+124,R12,Central Latin America,2005,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.202,0.177,0.229
+124,R12,Central Latin America,2005,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.06,0.048,0.074
+124,R12,Central Latin America,2005,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.067,0.057,0.079
+124,R12,Central Latin America,2005,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.259,0.234,0.285
+124,R12,Central Latin America,2005,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.23,0.212,0.249
+124,R12,Central Latin America,2005,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.064,0.056,0.073
+124,R12,Central Latin America,2006,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.06,0.048,0.075
+124,R12,Central Latin America,2006,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.203,0.178,0.231
+124,R12,Central Latin America,2006,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.069,0.058,0.082
+124,R12,Central Latin America,2006,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.261,0.235,0.288
+124,R12,Central Latin America,2006,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.232,0.213,0.251
+124,R12,Central Latin America,2006,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.065,0.057,0.074
+124,R12,Central Latin America,2007,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.205,0.178,0.233
+124,R12,Central Latin America,2007,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.061,0.049,0.076
+124,R12,Central Latin America,2007,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.071,0.06,0.084
+124,R12,Central Latin America,2007,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.264,0.237,0.292
+124,R12,Central Latin America,2007,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.066,0.057,0.076
+124,R12,Central Latin America,2007,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.235,0.214,0.254
+124,R12,Central Latin America,2008,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.062,0.049,0.077
+124,R12,Central Latin America,2008,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.209,0.179,0.237
+124,R12,Central Latin America,2008,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.267,0.238,0.297
+124,R12,Central Latin America,2008,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.073,0.06,0.087
+124,R12,Central Latin America,2008,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.067,0.058,0.078
+124,R12,Central Latin America,2008,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.238,0.216,0.258
+124,R12,Central Latin America,2009,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.211,0.182,0.24
+124,R12,Central Latin America,2009,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.063,0.05,0.079
+124,R12,Central Latin America,2009,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.27,0.239,0.301
+124,R12,Central Latin America,2009,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.074,0.06,0.089
+124,R12,Central Latin America,2009,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.068,0.059,0.08
+124,R12,Central Latin America,2009,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.24,0.219,0.26
+124,R12,Central Latin America,2010,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.064,0.05,0.081
+124,R12,Central Latin America,2010,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.214,0.184,0.243
+124,R12,Central Latin America,2010,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.075,0.061,0.091
+124,R12,Central Latin America,2010,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.272,0.241,0.303
+124,R12,Central Latin America,2010,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.243,0.221,0.263
+124,R12,Central Latin America,2010,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.069,0.059,0.081
+124,R12,Central Latin America,2011,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.216,0.186,0.248
+124,R12,Central Latin America,2011,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.065,0.051,0.081
+124,R12,Central Latin America,2011,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.076,0.061,0.093
+124,R12,Central Latin America,2011,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.274,0.241,0.308
+124,R12,Central Latin America,2011,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.07,0.06,0.082
+124,R12,Central Latin America,2011,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.245,0.222,0.268
+124,R12,Central Latin America,2012,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.065,0.052,0.082
+124,R12,Central Latin America,2012,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.218,0.186,0.252
+124,R12,Central Latin America,2012,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.276,0.242,0.311
+124,R12,Central Latin America,2012,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.077,0.061,0.095
+124,R12,Central Latin America,2012,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.247,0.223,0.272
+124,R12,Central Latin America,2012,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.071,0.061,0.083
+124,R12,Central Latin America,2013,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.066,0.052,0.084
+124,R12,Central Latin America,2013,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.22,0.187,0.254
+124,R12,Central Latin America,2013,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.078,0.061,0.099
+124,R12,Central Latin America,2013,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.278,0.241,0.317
+124,R12,Central Latin America,2013,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.249,0.223,0.276
+124,R12,Central Latin America,2013,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.072,0.061,0.084
 96,R13,Southern Latin America,1990,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.252,0.197,0.308
 96,R13,Southern Latin America,1990,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.061,0.045,0.08
 96,R13,Southern Latin America,1990,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.061,0.045,0.082
@@ -431,6 +575,150 @@ location_id,location,location_name,year,age_group_id,age_group,age_start,age_end
 96,R13,Southern Latin America,2013,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.236,0.188,0.29
 96,R13,Southern Latin America,2013,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.269,0.231,0.311
 96,R13,Southern Latin America,2013,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.08,0.065,0.096
+134,R14,Tropical Latin America,1990,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.019,0.013,0.027
+134,R14,Tropical Latin America,1990,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.105,0.076,0.141
+134,R14,Tropical Latin America,1990,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.144,0.105,0.195
+134,R14,Tropical Latin America,1990,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.027,0.018,0.039
+134,R14,Tropical Latin America,1990,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.125,0.1,0.155
+134,R14,Tropical Latin America,1990,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.023,0.017,0.03
+134,R14,Tropical Latin America,1991,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.019,0.013,0.027
+134,R14,Tropical Latin America,1991,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.105,0.077,0.138
+134,R14,Tropical Latin America,1991,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.144,0.106,0.192
+134,R14,Tropical Latin America,1991,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.027,0.018,0.039
+134,R14,Tropical Latin America,1991,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.125,0.101,0.154
+134,R14,Tropical Latin America,1991,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.023,0.018,0.03
+134,R14,Tropical Latin America,1992,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.019,0.013,0.026
+134,R14,Tropical Latin America,1992,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.104,0.078,0.136
+134,R14,Tropical Latin America,1992,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.027,0.018,0.038
+134,R14,Tropical Latin America,1992,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.144,0.109,0.189
+134,R14,Tropical Latin America,1992,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.023,0.017,0.03
+134,R14,Tropical Latin America,1992,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.124,0.102,0.151
+134,R14,Tropical Latin America,1993,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.019,0.013,0.026
+134,R14,Tropical Latin America,1993,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.104,0.079,0.134
+134,R14,Tropical Latin America,1993,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.143,0.11,0.181
+134,R14,Tropical Latin America,1993,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.026,0.018,0.036
+134,R14,Tropical Latin America,1993,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.124,0.103,0.147
+134,R14,Tropical Latin America,1993,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.023,0.017,0.029
+134,R14,Tropical Latin America,1994,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.104,0.081,0.131
+134,R14,Tropical Latin America,1994,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.019,0.013,0.026
+134,R14,Tropical Latin America,1994,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.026,0.018,0.034
+134,R14,Tropical Latin America,1994,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.143,0.113,0.176
+134,R14,Tropical Latin America,1994,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.123,0.105,0.144
+134,R14,Tropical Latin America,1994,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.022,0.017,0.028
+134,R14,Tropical Latin America,1995,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.104,0.085,0.128
+134,R14,Tropical Latin America,1995,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.019,0.014,0.026
+134,R14,Tropical Latin America,1995,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.141,0.116,0.17
+134,R14,Tropical Latin America,1995,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.025,0.019,0.033
+134,R14,Tropical Latin America,1995,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.022,0.018,0.027
+134,R14,Tropical Latin America,1995,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.123,0.105,0.141
+134,R14,Tropical Latin America,1996,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.105,0.087,0.128
+134,R14,Tropical Latin America,1996,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.019,0.014,0.026
+134,R14,Tropical Latin America,1996,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.14,0.117,0.165
+134,R14,Tropical Latin America,1996,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.025,0.019,0.032
+134,R14,Tropical Latin America,1996,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.122,0.107,0.137
+134,R14,Tropical Latin America,1996,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.022,0.018,0.027
+134,R14,Tropical Latin America,1997,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.02,0.015,0.027
+134,R14,Tropical Latin America,1997,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.109,0.09,0.131
+134,R14,Tropical Latin America,1997,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.025,0.019,0.032
+134,R14,Tropical Latin America,1997,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.139,0.116,0.165
+134,R14,Tropical Latin America,1997,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.023,0.018,0.027
+134,R14,Tropical Latin America,1997,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.124,0.109,0.139
+134,R14,Tropical Latin America,1998,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.022,0.016,0.029
+134,R14,Tropical Latin America,1998,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.114,0.095,0.137
+134,R14,Tropical Latin America,1998,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.026,0.02,0.033
+134,R14,Tropical Latin America,1998,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.14,0.117,0.166
+134,R14,Tropical Latin America,1998,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.127,0.111,0.143
+134,R14,Tropical Latin America,1998,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.024,0.02,0.028
+134,R14,Tropical Latin America,1999,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.023,0.018,0.031
+134,R14,Tropical Latin America,1999,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.119,0.099,0.142
+134,R14,Tropical Latin America,1999,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.141,0.117,0.167
+134,R14,Tropical Latin America,1999,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.026,0.021,0.033
+134,R14,Tropical Latin America,1999,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.13,0.114,0.147
+134,R14,Tropical Latin America,1999,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.025,0.021,0.029
+134,R14,Tropical Latin America,2000,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.025,0.019,0.032
+134,R14,Tropical Latin America,2000,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.125,0.104,0.147
+134,R14,Tropical Latin America,2000,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.027,0.021,0.034
+134,R14,Tropical Latin America,2000,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.141,0.118,0.168
+134,R14,Tropical Latin America,2000,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.133,0.117,0.149
+134,R14,Tropical Latin America,2000,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.026,0.022,0.031
+134,R14,Tropical Latin America,2001,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.13,0.109,0.152
+134,R14,Tropical Latin America,2001,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.026,0.02,0.033
+134,R14,Tropical Latin America,2001,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.028,0.022,0.035
+134,R14,Tropical Latin America,2001,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.143,0.12,0.17
+134,R14,Tropical Latin America,2001,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.027,0.023,0.032
+134,R14,Tropical Latin America,2001,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.136,0.12,0.153
+134,R14,Tropical Latin America,2002,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.028,0.022,0.035
+134,R14,Tropical Latin America,2002,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.135,0.114,0.158
+134,R14,Tropical Latin America,2002,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.146,0.123,0.173
+134,R14,Tropical Latin America,2002,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.029,0.023,0.037
+134,R14,Tropical Latin America,2002,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.028,0.024,0.034
+134,R14,Tropical Latin America,2002,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.141,0.123,0.159
+134,R14,Tropical Latin America,2003,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.03,0.023,0.038
+134,R14,Tropical Latin America,2003,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.142,0.117,0.168
+134,R14,Tropical Latin America,2003,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.152,0.127,0.182
+134,R14,Tropical Latin America,2003,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.031,0.024,0.04
+134,R14,Tropical Latin America,2003,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.147,0.127,0.167
+134,R14,Tropical Latin America,2003,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.03,0.026,0.036
+134,R14,Tropical Latin America,2004,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.031,0.024,0.041
+134,R14,Tropical Latin America,2004,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.149,0.121,0.18
+134,R14,Tropical Latin America,2004,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.033,0.025,0.043
+134,R14,Tropical Latin America,2004,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.16,0.129,0.195
+134,R14,Tropical Latin America,2004,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.154,0.132,0.178
+134,R14,Tropical Latin America,2004,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.032,0.027,0.039
+134,R14,Tropical Latin America,2005,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.033,0.024,0.044
+134,R14,Tropical Latin America,2005,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.155,0.122,0.19
+134,R14,Tropical Latin America,2005,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.036,0.026,0.047
+134,R14,Tropical Latin America,2005,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.168,0.131,0.209
+134,R14,Tropical Latin America,2005,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.161,0.135,0.189
+134,R14,Tropical Latin America,2005,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.034,0.028,0.042
+134,R14,Tropical Latin America,2006,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.035,0.025,0.047
+134,R14,Tropical Latin America,2006,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.161,0.124,0.202
+134,R14,Tropical Latin America,2006,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.177,0.137,0.226
+134,R14,Tropical Latin America,2006,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.039,0.027,0.052
+134,R14,Tropical Latin America,2006,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.037,0.029,0.045
+134,R14,Tropical Latin America,2006,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.169,0.141,0.2
+134,R14,Tropical Latin America,2007,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.167,0.127,0.212
+134,R14,Tropical Latin America,2007,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.037,0.026,0.05
+134,R14,Tropical Latin America,2007,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.041,0.029,0.058
+134,R14,Tropical Latin America,2007,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.187,0.142,0.244
+134,R14,Tropical Latin America,2007,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.177,0.146,0.214
+134,R14,Tropical Latin America,2007,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.039,0.031,0.049
+134,R14,Tropical Latin America,2008,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.173,0.129,0.223
+134,R14,Tropical Latin America,2008,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.038,0.027,0.052
+134,R14,Tropical Latin America,2008,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.044,0.03,0.063
+134,R14,Tropical Latin America,2008,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.197,0.147,0.26
+134,R14,Tropical Latin America,2008,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.185,0.151,0.225
+134,R14,Tropical Latin America,2008,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.041,0.032,0.052
+134,R14,Tropical Latin America,2009,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.178,0.132,0.229
+134,R14,Tropical Latin America,2009,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.04,0.028,0.055
+134,R14,Tropical Latin America,2009,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.047,0.031,0.069
+134,R14,Tropical Latin America,2009,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.205,0.151,0.273
+134,R14,Tropical Latin America,2009,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.192,0.156,0.234
+134,R14,Tropical Latin America,2009,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.044,0.033,0.056
+134,R14,Tropical Latin America,2010,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.041,0.028,0.057
+134,R14,Tropical Latin America,2010,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.183,0.134,0.235
+134,R14,Tropical Latin America,2010,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.214,0.157,0.287
+134,R14,Tropical Latin America,2010,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.05,0.033,0.073
+134,R14,Tropical Latin America,2010,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.198,0.16,0.241
+134,R14,Tropical Latin America,2010,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.046,0.034,0.059
+134,R14,Tropical Latin America,2011,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.187,0.139,0.242
+134,R14,Tropical Latin America,2011,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.042,0.029,0.06
+134,R14,Tropical Latin America,2011,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.222,0.161,0.298
+134,R14,Tropical Latin America,2011,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.053,0.034,0.078
+134,R14,Tropical Latin America,2011,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.204,0.164,0.248
+134,R14,Tropical Latin America,2011,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.047,0.036,0.062
+134,R14,Tropical Latin America,2012,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.191,0.141,0.249
+134,R14,Tropical Latin America,2012,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.043,0.03,0.061
+134,R14,Tropical Latin America,2012,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.229,0.165,0.308
+134,R14,Tropical Latin America,2012,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.055,0.036,0.08
+134,R14,Tropical Latin America,2012,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.21,0.168,0.255
+134,R14,Tropical Latin America,2012,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.049,0.037,0.065
+134,R14,Tropical Latin America,2013,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.195,0.144,0.255
+134,R14,Tropical Latin America,2013,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.044,0.03,0.063
+134,R14,Tropical Latin America,2013,8,15 to 19 yrs,15,19,2,female,pct,obese,prevalence,0.057,0.037,0.086
+134,R14,Tropical Latin America,2013,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.235,0.168,0.316
+134,R14,Tropical Latin America,2013,8,15 to 19 yrs,15,19,3,both,pct,obese,prevalence,0.051,0.038,0.067
+134,R14,Tropical Latin America,2013,8,15 to 19 yrs,15,19,3,both,pct,overweight,prevalence,0.214,0.171,0.26
 102,USA,United States,1990,8,15 to 19 yrs,15,19,1,male,pct,overweight,prevalence,0.258,0.218,0.299
 102,USA,United States,1990,8,15 to 19 yrs,15,19,1,male,pct,obese,prevalence,0.09,0.071,0.112
 102,USA,United States,1990,8,15 to 19 yrs,15,19,2,female,pct,overweight,prevalence,0.236,0.203,0.272
