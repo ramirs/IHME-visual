@@ -6,6 +6,11 @@ body{
 	position: relative;
 	font-family: 'Lato', helvetica, arial, sans-serif;
 }
+hr{
+	width: 45%;
+	position: absolute;
+	top: 285px;	
+}
 .dual_bars{
 	position: absolute;
 	right: 0px;
@@ -13,6 +18,20 @@ body{
 .bubble_chart{
 	position: absolute;
 	top: 320px;
+	left: 140px;
+}
+.content{
+	text-align: left;
+	width: 45%;
+	position: absolute;
+}
+.content_header{
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+.content_link{
+	position: absolute;
+	top: 190px;
 }
 .axis text {
 	font: 10px arial, sans-serif;
@@ -35,6 +54,11 @@ body{
 	border-radius: 3px;
 	font-size: 0.7em;
 }
+.circle_chart{
+	width: 90px;
+	position: absolute;
+	top: 415px;
+}
 .legend_icon{
 	width: 20px;
 	height: 15px;
@@ -47,6 +71,19 @@ body{
 .legend_female{
 	background-color: #f79e72;
 }
+
+.group_0{
+	background-color: #fdf3f2;
+}
+.group_1{
+	background-color: #f8c9c4;
+}
+.group_2{
+	background-color: #ef8b80;
+}
+.group_3{
+	background-color: #e74c3c;	
+}
 .select{
 	width: 360px;
 	text-align: center;
@@ -58,6 +95,9 @@ body{
 	max-width: 750px;
 	text-align: center;
 	margin-top: 15px;
+}
+.header{
+	font-weight: bold;
 }
 .tooltip{
 	position: absolute;

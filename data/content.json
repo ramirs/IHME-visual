@@ -1,0 +1,32 @@
+{
+	"102":{
+		"name":"United States of America (USA)",
+		"content":"USA is the most overweight region in the datset. You can see the overweight teenage population rapidly grow in the 90's. Recent consumption trends and healthier food initiatives may contribute to the slowdown and decline of obesity rates in this region.",
+		"link":"https://en.wikipedia.org/wiki/United_States"
+	},
+	"101":{
+		"name":"Canada (CAN)",
+		"content":"Like the USA, Canada's teenage population experienced an increase in weight in the 90's, but not as severe of an increase. Since then, the population has been in a healthy state of fluctuation and hasn't trended one way or the other in a substantial way.",
+		"link":"https://en.wikipedia.org/wiki/Canada"
+	},
+	"120":{
+		"name":"Andean Latin America (R11)",
+		"content":"This region has a substantial difference in overweight prevalence between men and women. Andes culture values fat as a symbol of strength and well-being.",
+		"link":"https://en.wikipedia.org/wiki/Andean_states"
+	},	
+	"124":{
+		"name":"Central Latin America (R12)",
+		"content":"Much like R11, this region has a substantial difference in overweight prevalence between men and women. Cultural norms could explain why the female population experienced a period of rapid growth while the male population stayed relatively stable.",
+		"link":"https://en.wikipedia.org/wiki/Central_America"
+	},
+	"96":{
+		"name":"Southern Latin America (R13)",
+		"content":"In the Southern region of Latin America, we see a relatively stable overweight population, but the males are trending heavier more rapidly than females. The female overweight population has even been declining in recent years, which could signify a cultural shift.",
+		"link":"https://en.wikipedia.org/wiki/Southern_Cone"
+	},
+	"134":{
+		"name":"Tropical Latin America (R14)",
+		"content":"Much like the USA, Tropical Latin America has experienced a very rapid growth of overweight peoples in recent years. However, this growth isn't neccessarily unhealthy. In future years, we will see if the weight for both males and females in this region either stabilizes or continues to grow rapidly.",
+		"link":"http://www.fao.org/docrep/004/y1997e/y1997e1c.htm"
+	}
+}
