@@ -10,7 +10,7 @@
 		$('.content_link').html('<a href=\"' + data.link +'\" target=\"_blank\">More information about this region</a>');
 	};
 
-	$.getJSON("../data/content.json", function(data){
+	$.getJSON("../../data/content.json", function(data){
 		content = data;
 		updateContent();
 	});
