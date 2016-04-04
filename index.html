@@ -47,17 +47,19 @@
 
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script type="text/javascript" src="js/ihme.js" defer></script>
 <script type="text/javascript">
 
 var male_data = {};
 var female_data = {};
 var both_data = {};
+var content_data;
 var margin = {left:50, bottom:25, top:35};
 var w = 550;
 var h = 550;
 var diameter = 250;
 var spacing = 5;
+var selection = $('.country_code')[0];
+
 
 var svg = d3.select("body").append("svg")
 	//extra margin added for visibility, could try padding instead
@@ -292,11 +294,24 @@ var updateBubbleChart = function () {
     	.attr("class", "header")
     	.text("Combined Overweight % (2013)");
 
-    $('.circle_selector').click(function(){
-    	var data = $(this).attr('location');
-    	$('.country_code').val(data);
-    	changeBarChart(data);
-    });
+	$('.circle_selector').click(function(){
+		var data = $(this).attr('location');
+		$('.country_code').val(data);
+		changeBarChart(data);
+		updateContent(data);
+	});
+};
+
+var updateContent = function (x) {
+	var data;
+	if(typeof x === "undefined"){
+		data = content_data[$('.country_code').val()];
+	} else {
+		data = content_data[selection.value];
+	}
+	$('.content_header').text(data.name);
+	$('.content_main').text(data.content);
+	$('.content_link').html('<a href=\"' + data.link +'\" target=\"_blank\">More information about this region</a>');
 };
 
 d3.select(".country_code").on('change', function(){
@@ -352,6 +367,16 @@ d3.csv("data/IHME-data-teens-americas.csv", function(error, data) {
 		updateBubbleChart();
 	}
 });
+
+$.getJSON("../data/content.json", function(data){
+	content_data = data;
+	updateContent();
+});
+
+$(".country_code").on('change', function(){
+	updateContent();
+});
+
 </script>
 
 </body>
