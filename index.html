@@ -22,9 +22,27 @@
 			<option value="134">Tropical Latin America (R14)</option>
 		</select>
 	</div>
+	<div class="content">
+		<div class="content_header header">
+			REGION NAME
+		</div>
+		<div class="content_main">
+			ANALYSIS
+		</div>
+		<div class="content_link">
+			<a href="#">More info</a>
+		</div>
+	</div>
+	<hr>
 	<div class="legend dual_bars">
 		<div class="legend_icon legend_female"></div>Female<br>
 		<div class="legend_icon legend_male"></div>Male
+	</div>
+	<div class="legend circle_chart">
+		<div class="legend_icon group_3"></div> 35%+<br>
+		<div class="legend_icon group_2"></div>25% - 35%<br>
+		<div class="legend_icon group_1"></div>15% - 25%<br>
+		<div class="legend_icon group_0"></div> < 15%
 	</div>
 
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
@@ -32,13 +50,13 @@
 <script type="text/javascript" src="js/ihme.js" defer></script>
 <script type="text/javascript">
 
+var male_data = {};
+var female_data = {};
+var both_data = {};
 var margin = {left:50, bottom:25, top:35};
 var w = 550;
 var h = 550;
 var diameter = 250;
-var color = d3.scale.linear()
-	.domain([20, 40])
-	.range(["grey", "red"])
 var spacing = 5;
 
 var svg = d3.select("body").append("svg")
@@ -57,10 +75,14 @@ var bubble = d3.layout.pack()
 var svg1 = d3.select("body").append("svg")
 	//extra margin added for visibility, could try padding instead
 	.attr("class", "bubble_chart")
-	.attr("width", diameter + margin.left)
+	.attr("width", diameter + (margin.left * 2))
 	.attr("height", diameter + margin.top)
   .append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.bottom + ")");
+
+	d3.select(".bubble_chart")
+	  	.append("text")
+		.text("hello");
 
 var x1 = d3.scale.linear()
 	.domain([0, 0.5])
@@ -111,10 +133,6 @@ var tooltip = d3.select("body").append("div")
 	.attr("class", "tooltip")
 	.style("opacity", 0);
 
-var male_data = {};
-var female_data = {};
-var both_data = {};
-
 svg.append("g")
 	.attr("class", "axis")
 	.attr("transform", "translate(0," + h + ")")
@@ -133,7 +151,7 @@ svg.append("text")
 	.attr("x", w / 2)
 	.attr("y", h + (margin.top))
 	.style("text-anchor", "middle")
-	.text("Percentage(%) of teenage population");
+	.text("Teenage Population Percentage (%)");
 
 var changeBarChart = function(country) {
  	svg.selectAll("rect").remove();
@@ -141,7 +159,6 @@ var changeBarChart = function(country) {
 }
 
 var updateBarChart = function(location){
-
  	svg.selectAll("rect.male")
 		.data(male_data[location])
 		.enter()
@@ -237,7 +254,6 @@ var updateBubbleChart = function () {
 	  		return d.location_id;
 	  	})
 	  	.on("mouseover", function(d){
-	  		console.log(d);
 	 		tooltip.transition()
 	 		  .duration(150)
 	 		  .style("opacity", 0.90);
@@ -251,17 +267,30 @@ var updateBubbleChart = function () {
 	 		  .style("opacity", 0.0);
 	 	})
 	  	.style("fill", function(d){
-	  		return color(d.value);
+	  		if (d.value <= 15.00) {
+		  		return d3.rgb("#fdf3f2");
+	  		} else if (d.value <= 25.00) {
+	  			return d3.rgb("#f8c9c4");
+	  		} else if (d.value <= 35.00) {
+	  			return d3.rgb("#ef8b80");
+	  		} else if (35.00 <= d.value){
+	  			return d3.rgb("#e74c3c");
+	  		}
 	  	})
 	  	.attr("r", function(d){ 
 	  		return d.r; 
 	  	})
         .attr("cx", function(d){ 
-        	return d.x; 
+        	return d.x;
         })
         .attr("cy", function(d){ 
         	return d.y; 
         });
+
+    svg1.append("text")
+    	.attr("transform", "translate(0,0)")
+    	.attr("class", "header")
+    	.text("Combined Overweight % (2013)");
 
     $('.circle_selector').click(function(){
     	var data = $(this).attr('location');
