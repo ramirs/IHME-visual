@@ -1,3 +1,6 @@
+html{
+	padding: 15px;
+}
 body{
 	font-size: 14pt;
 	width: 100%;
@@ -54,10 +57,10 @@ hr{
 	border-radius: 3px;
 	font-size: 0.7em;
 }
-.circle_chart{
+.legend.bubble_chart{
 	width: 90px;
-	position: absolute;
 	top: 415px;
+	left: 0px;
 }
 .legend_icon{
 	width: 20px;
@@ -125,4 +128,47 @@ hr{
 .page_info:hover{
 	cursor: pointer;
 	color: #2ecc71;
+}
+
+@media (max-width: 1145px) {
+	body{
+		min-width: 650px;
+		text-align: center;
+	}
+
+	.label.select{
+		margin-bottom: 25px;
+	}
+
+	.content, .dual_bars, .content_link, .bubble_chart{
+		position: initial;
+		display: inline-block;
+	}
+
+	.content{
+		vertical-align: top;
+	}
+
+	.content_link, .content_header{
+		margin-top: 10px;
+	}
+
+	.legend, .tooltip{
+		position: absolute;
+		text-align: left;
+	}
+
+	.legend.dual_bars{
+		top: 550px;
+		left: 80%;
+	}
+
+	.legend.bubble_chart{
+		top: 325px;
+		left: 80%;
+	}
+
+	hr{
+		display: none;
+	}
 }

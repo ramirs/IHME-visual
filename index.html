@@ -38,13 +38,12 @@
 		<div class="legend_icon legend_female"></div>Female<br>
 		<div class="legend_icon legend_male"></div>Male
 	</div>
-	<div class="legend circle_chart">
+	<div class="legend bubble_chart">
 		<div class="legend_icon group_3"></div> 35%+<br>
 		<div class="legend_icon group_2"></div>25% - 35%<br>
 		<div class="legend_icon group_1"></div>15% - 25%<br>
 		<div class="legend_icon group_0"></div> < 15%
 	</div>
-
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script type="text/javascript">
@@ -66,19 +65,19 @@ var bubble = d3.layout.pack()
 	.padding(1.5)
 	.size([diameter,diameter]);
 
-var svg = d3.select("body").append("svg")
-	//extra margin added for visibility, could try padding instead
-	.attr("class", "dual_bars")
-	.attr("width", w + margin.left * 2)
-	.attr("height", margin.top + h + margin.bottom * 2)
-  .append("g")
-	.attr("transform", "translate(" + margin.left + "," + margin.bottom + ")");
-
 var svg1 = d3.select("body").append("svg")
 	//extra margin added for visibility, could try padding instead
 	.attr("class", "bubble_chart")
 	.attr("width", diameter + (margin.left * 2))
 	.attr("height", diameter + margin.top)
+  .append("g")
+	.attr("transform", "translate(" + margin.left + "," + margin.bottom + ")");
+
+var svg = d3.select("body").append("svg")
+	//extra margin added for visibility, could try padding instead
+	.attr("class", "dual_bars")
+	.attr("width", w + margin.left * 2)
+	.attr("height", margin.top + h + margin.bottom * 2)
   .append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.bottom + ")");
 
@@ -125,14 +124,13 @@ var updateBarChart = function(location){
 		.data(male_data[location])
 		.enter()
 	  .append("rect")
-	 	.on("mouseover", function(d){
-	 		console.log(d3.event);
+	 	.on("mouseover", function(d){	
 	 		tooltip.transition()
 	 		  .duration(150)
 	 		  .style("opacity", 0.90);
 	 		tooltip.html('Country: ' + d.location_name + '<br>Specified Gender: ' + d.sex + '</br>Year: ' + d.year + '<br>Weight Class: ' + d.metric + '<br>% of Pop: ' + d.mean)
-	 		  .style("left", (d3.event.pageX - 50) + "px")
-	 		  .style("top", (d3.event.pageY - 75) + "px");
+	 		  .style("left", (d3.event.x - $('body').offset().left + 25) + "px")
+	 		  .style("top", (d3.event.y - $('body').offset().top - 25) + "px");
 	 	})
 	 	.on("mouseout", function(d){
 	 		tooltip.transition()
@@ -158,8 +156,8 @@ var updateBarChart = function(location){
 	 		  .duration(150)
 	 		  .style("opacity", 0.90);
 	 		tooltip.html('Country: ' + d.location_name + '<br>Specified Gender: ' + d.sex + '</br>Year: ' + d.year + '<br>Weight Class: ' + d.metric + '<br>% of Pop: ' + d.mean)
-	 		  .style("left", (d3.event.x - 375) + "px")
-	 		  .style("top", (d3.event.y - 75) + "px");
+	 		  .style("left", (d3.event.x - $('body').offset().left + 25) + "px")
+	 		  .style("top", (d3.event.y - $('body').offset().top - 25) + "px");
 	 	})
 	 	.on("mouseout", function(d){
 	 		tooltip.transition()
@@ -213,16 +211,16 @@ var updateBubbleChart = function () {
 	  	})
 	  	.on("mouseover", function(d){
 	 		tooltip.transition()
-	 		  .duration(150)
-	 		  .style("opacity", 0.90);
-	 		tooltip.html('Location: ' + d.location_name + "<br>Overweight Population:" + d.value + "%")
-	 		  .style("left", (d3.event.x) + "px")
-	 		  .style("top", (d3.event.y) + "px");
+		 	  .duration(150)
+		 	  .style("opacity", 0.90);
+			tooltip.html('Location: ' + d.location_name + "<br>Overweight Population:" + d.value + "%")
+			  .style("left", (d3.event.x - $('body').offset().left + 25) + "px")
+			  .style("top", (d3.event.y - $('body').offset().top - 25) + "px");
 	 	})
 	 	.on("mouseout", function(d){
 	 		tooltip.transition()
-	 		  .duration(250)
-	 		  .style("opacity", 0.0);
+				.duration(250)
+				.style("opacity", 0.0);
 	 	})
 	  	.style("fill", function(d){
 	  		if (d.value <= 15.00) {
@@ -296,8 +294,7 @@ d3.select(".country_code").on('change', function(){
 });
 
 d3.select(".bubble_chart")
-  	.append("text")
-	.text("hello");
+  	.append("text");
 
 d3.csv("data/IHME-data-teens-americas.csv", function(error, data) {
 	if (error) {
@@ -343,8 +340,8 @@ d3.csv("data/IHME-data-teens-americas.csv", function(error, data) {
 			}
 		});
 		//initialize chart looking at USA
-		updateBarChart(102);
 		updateBubbleChart();
+		updateBarChart(102);
 	}
 });
 
