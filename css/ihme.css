@@ -105,7 +105,7 @@ hr{
 	background-color: #ecf0f1;
 	border: 3px solid #bdc3c7;
 	padding: 5px;
-	width: 240px;
+	min-width: 240px;
 }
 .male_bar{
 	fill: #6baed6;
