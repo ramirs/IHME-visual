@@ -9,7 +9,7 @@
 <body>
 	<!-- <i class="fa fa-info-circle icon page_info"></i> -->
 	<div class="label page_header">
-		Prevalence of Overweight Teenagers (population age 15-19)
+		Prevalence of Overweight Teenagers in North and South America
 	</div>
 	<div class="label select">
 		Selected Region:
@@ -52,14 +52,19 @@
 var male_data = {};
 var female_data = {};
 var both_data = {};
+// var master_data = {}; //TODO: combine data objects
 var content_data;
 var margin = {left:50, bottom:25, top:35};
 var w = 550;
 var h = 550;
 var diameter = 250;
 var spacing = 5;
-var selection = $('.country_code')[0];
 
+//bubble chart layout
+var bubble = d3.layout.pack()
+	.sort(null)
+	.padding(1.5)
+	.size([diameter,diameter]);
 
 var svg = d3.select("body").append("svg")
 	//extra margin added for visibility, could try padding instead
@@ -69,11 +74,6 @@ var svg = d3.select("body").append("svg")
   .append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.bottom + ")");
 
-var bubble = d3.layout.pack()
-	.sort(null)
-	.padding(1.5)
-	.size([diameter,diameter]);
-
 var svg1 = d3.select("body").append("svg")
 	//extra margin added for visibility, could try padding instead
 	.attr("class", "bubble_chart")
@@ -81,10 +81,6 @@ var svg1 = d3.select("body").append("svg")
 	.attr("height", diameter + margin.top)
   .append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.bottom + ")");
-
-	d3.select(".bubble_chart")
-	  	.append("text")
-		.text("hello");
 
 var x1 = d3.scale.linear()
 	.domain([0, 0.5])
@@ -106,14 +102,6 @@ var xAxis2 = d3.svg.axis()
 	.tickFormat(d3.format("p"))
 	.orient("bottom");
 
-var x3 = d3.scale.linear()
-	.domain([0, 5])
-	.range([0, w]);
-var xAxis3 = d3.svg.axis()
-	.scale(x3)
-	.ticks(5)
-	.orient("bottom");
-
 var y = d3.scale.linear()
 	.domain([2013, 1990])
 	.range([h, 0]);
@@ -123,37 +111,9 @@ var yAxis = d3.svg.axis()
 	.tickFormat(d3.format("d"))
 	.orient("left");
 
-var y1 = d3.scale.linear()
-	.domain([0, 5])
-	.range([0, (h / 2)]);
-var yAxis1 = d3.svg.axis()
-	.scale(y1)
-	.ticks(5)
-	.orient("left");
-
 var tooltip = d3.select("body").append("div")
 	.attr("class", "tooltip")
 	.style("opacity", 0);
-
-svg.append("g")
-	.attr("class", "axis")
-	.attr("transform", "translate(0," + h + ")")
-	.call(xAxis1);
-
-svg.append("g")
-	.attr("class", "axis")
-	.attr("transform", "translate("+ (w / 2) + "," + h + ")")
-	.call(xAxis2);
-
-svg.append("g")
-	.attr("class", "axis")
-	.call(yAxis);
-
-svg.append("text")
-	.attr("x", w / 2)
-	.attr("y", h + (margin.top))
-	.style("text-anchor", "middle")
-	.text("Teenage Population Percentage (%)");
 
 var changeBarChart = function(country) {
  	svg.selectAll("rect").remove();
@@ -217,14 +177,9 @@ var updateBarChart = function(location){
 			return ("translate(" + ((w / 2) - Number((w / 2 / 50) * (d.mean))) + ",0)")
     	}) 
 	    .attr("height", (h / (female_data[location].length) - spacing));
-	
-	function translate(d) {
-		return ("translate(" + ((w / 2) - Number((w / 2 / 100) * (d.mean * 100))) + ",0)")
-	};
 };
 
 var updateBubbleChart = function () {
-
 	var nodes = [];
 
 	$.each(both_data, function(key, value){
@@ -239,7 +194,7 @@ var updateBubbleChart = function () {
 		};
 		nodes.push(node);
 	});
-	
+
 	var bubble_nodes = bubble.nodes({children:nodes})
 		.filter(function(d){
 			return !d.children;
@@ -307,17 +262,41 @@ var updateContent = function (x) {
 	if(typeof x === "undefined"){
 		data = content_data[$('.country_code').val()];
 	} else {
-		data = content_data[selection.value];
+		data = content_data[$('.country_code')[0].value];
 	}
 	$('.content_header').text(data.name);
 	$('.content_main').text(data.content);
 	$('.content_link').html('<a href=\"' + data.link +'\" target=\"_blank\">More information about this region</a>');
 };
 
+svg.append("g")
+	.attr("class", "axis")
+	.attr("transform", "translate(0," + h + ")")
+	.call(xAxis1);
+
+svg.append("g")
+	.attr("class", "axis")
+	.attr("transform", "translate("+ (w / 2) + "," + h + ")")
+	.call(xAxis2);
+
+svg.append("g")
+	.attr("class", "axis")
+	.call(yAxis);
+
+svg.append("text")
+	.attr("x", w / 2)
+	.attr("y", h + (margin.top))
+	.style("text-anchor", "middle")
+	.text("Teenage Population Percentage (%)");
+
 d3.select(".country_code").on('change', function(){
   	var data = eval(d3.select(this).property('value'));
   	changeBarChart(data);
 });
+
+d3.select(".bubble_chart")
+  	.append("text")
+	.text("hello");
 
 d3.csv("data/IHME-data-teens-americas.csv", function(error, data) {
 	if (error) {
