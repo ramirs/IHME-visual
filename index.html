@@ -9,7 +9,7 @@
 <body>
 	<!-- <i class="fa fa-info-circle icon page_info"></i> -->
 	<div class="label page_header">
-		Prevalence of Overweight Teenagers (population age 15-19)
+		Prevalence of Overweight Teenagers in North and South America
 	</div>
 	<div class="label select">
 		Selected Region:
@@ -38,13 +38,12 @@
 		<div class="legend_icon legend_female"></div>Female<br>
 		<div class="legend_icon legend_male"></div>Male
 	</div>
-	<div class="legend circle_chart">
+	<div class="legend bubble_chart">
 		<div class="legend_icon group_3"></div> 35%+<br>
 		<div class="legend_icon group_2"></div>25% - 35%<br>
 		<div class="legend_icon group_1"></div>15% - 25%<br>
 		<div class="legend_icon group_0"></div> < 15%
 	</div>
-
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script type="text/javascript">
@@ -52,23 +51,15 @@
 var male_data = {};
 var female_data = {};
 var both_data = {};
+// var master_data = {}; //TODO: combine data objects
 var content_data;
 var margin = {left:50, bottom:25, top:35};
 var w = 550;
 var h = 550;
 var diameter = 250;
 var spacing = 5;
-var selection = $('.country_code')[0];
 
-
-var svg = d3.select("body").append("svg")
-	//extra margin added for visibility, could try padding instead
-	.attr("class", "dual_bars")
-	.attr("width", w + margin.left * 2)
-	.attr("height", margin.top + h + margin.bottom * 2)
-  .append("g")
-	.attr("transform", "translate(" + margin.left + "," + margin.bottom + ")");
-
+//bubble chart layout
 var bubble = d3.layout.pack()
 	.sort(null)
 	.padding(1.5)
@@ -82,9 +73,13 @@ var svg1 = d3.select("body").append("svg")
   .append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.bottom + ")");
 
-	d3.select(".bubble_chart")
-	  	.append("text")
-		.text("hello");
+var svg = d3.select("body").append("svg")
+	//extra margin added for visibility, could try padding instead
+	.attr("class", "dual_bars")
+	.attr("width", w + margin.left * 2)
+	.attr("height", margin.top + h + margin.bottom * 2)
+  .append("g")
+	.attr("transform", "translate(" + margin.left + "," + margin.bottom + ")");
 
 var x1 = d3.scale.linear()
 	.domain([0, 0.5])
@@ -106,14 +101,6 @@ var xAxis2 = d3.svg.axis()
 	.tickFormat(d3.format("p"))
 	.orient("bottom");
 
-var x3 = d3.scale.linear()
-	.domain([0, 5])
-	.range([0, w]);
-var xAxis3 = d3.svg.axis()
-	.scale(x3)
-	.ticks(5)
-	.orient("bottom");
-
 var y = d3.scale.linear()
 	.domain([2013, 1990])
 	.range([h, 0]);
@@ -123,37 +110,9 @@ var yAxis = d3.svg.axis()
 	.tickFormat(d3.format("d"))
 	.orient("left");
 
-var y1 = d3.scale.linear()
-	.domain([0, 5])
-	.range([0, (h / 2)]);
-var yAxis1 = d3.svg.axis()
-	.scale(y1)
-	.ticks(5)
-	.orient("left");
-
 var tooltip = d3.select("body").append("div")
 	.attr("class", "tooltip")
 	.style("opacity", 0);
-
-svg.append("g")
-	.attr("class", "axis")
-	.attr("transform", "translate(0," + h + ")")
-	.call(xAxis1);
-
-svg.append("g")
-	.attr("class", "axis")
-	.attr("transform", "translate("+ (w / 2) + "," + h + ")")
-	.call(xAxis2);
-
-svg.append("g")
-	.attr("class", "axis")
-	.call(yAxis);
-
-svg.append("text")
-	.attr("x", w / 2)
-	.attr("y", h + (margin.top))
-	.style("text-anchor", "middle")
-	.text("Teenage Population Percentage (%)");
 
 var changeBarChart = function(country) {
  	svg.selectAll("rect").remove();
@@ -165,13 +124,13 @@ var updateBarChart = function(location){
 		.data(male_data[location])
 		.enter()
 	  .append("rect")
-	 	.on("mouseover", function(d){
+	 	.on("mouseover", function(d){	
 	 		tooltip.transition()
 	 		  .duration(150)
 	 		  .style("opacity", 0.90);
 	 		tooltip.html('Country: ' + d.location_name + '<br>Specified Gender: ' + d.sex + '</br>Year: ' + d.year + '<br>Weight Class: ' + d.metric + '<br>% of Pop: ' + d.mean)
-	 		  .style("left", (d3.event.x + 40) + "px")
-	 		  .style("top", (d3.event.y - 20) + "px");
+	 		  .style("left", (d3.event.x - $('body').offset().left + 25) + "px")
+	 		  .style("top", (d3.event.y - $('body').offset().top - 25) + "px");
 	 	})
 	 	.on("mouseout", function(d){
 	 		tooltip.transition()
@@ -197,8 +156,8 @@ var updateBarChart = function(location){
 	 		  .duration(150)
 	 		  .style("opacity", 0.90);
 	 		tooltip.html('Country: ' + d.location_name + '<br>Specified Gender: ' + d.sex + '</br>Year: ' + d.year + '<br>Weight Class: ' + d.metric + '<br>% of Pop: ' + d.mean)
-	 		  .style("left", (d3.event.x - 240) + "px")
-	 		  .style("top", (d3.event.y - 23) + "px");
+	 		  .style("left", (d3.event.x - $('body').offset().left + 25) + "px")
+	 		  .style("top", (d3.event.y - $('body').offset().top - 25) + "px");
 	 	})
 	 	.on("mouseout", function(d){
 	 		tooltip.transition()
@@ -217,14 +176,9 @@ var updateBarChart = function(location){
 			return ("translate(" + ((w / 2) - Number((w / 2 / 50) * (d.mean))) + ",0)")
     	}) 
 	    .attr("height", (h / (female_data[location].length) - spacing));
-	
-	function translate(d) {
-		return ("translate(" + ((w / 2) - Number((w / 2 / 100) * (d.mean * 100))) + ",0)")
-	};
 };
 
 var updateBubbleChart = function () {
-
 	var nodes = [];
 
 	$.each(both_data, function(key, value){
@@ -239,7 +193,7 @@ var updateBubbleChart = function () {
 		};
 		nodes.push(node);
 	});
-	
+
 	var bubble_nodes = bubble.nodes({children:nodes})
 		.filter(function(d){
 			return !d.children;
@@ -257,16 +211,16 @@ var updateBubbleChart = function () {
 	  	})
 	  	.on("mouseover", function(d){
 	 		tooltip.transition()
-	 		  .duration(150)
-	 		  .style("opacity", 0.90);
-	 		tooltip.html('Location: ' + d.location_name + "<br>Overweight Population:" + d.value + "%")
-	 		  .style("left", (d3.event.x) + "px")
-	 		  .style("top", (d3.event.y) + "px");
+		 	  .duration(150)
+		 	  .style("opacity", 0.90);
+			tooltip.html('Location: ' + d.location_name + "<br>Overweight Population:" + d.value + "%")
+			  .style("left", (d3.event.x - $('body').offset().left + 25) + "px")
+			  .style("top", (d3.event.y - $('body').offset().top - 25) + "px");
 	 	})
 	 	.on("mouseout", function(d){
 	 		tooltip.transition()
-	 		  .duration(250)
-	 		  .style("opacity", 0.0);
+				.duration(250)
+				.style("opacity", 0.0);
 	 	})
 	  	.style("fill", function(d){
 	  		if (d.value <= 15.00) {
@@ -307,17 +261,40 @@ var updateContent = function (x) {
 	if(typeof x === "undefined"){
 		data = content_data[$('.country_code').val()];
 	} else {
-		data = content_data[selection.value];
+		data = content_data[$('.country_code')[0].value];
 	}
 	$('.content_header').text(data.name);
 	$('.content_main').text(data.content);
 	$('.content_link').html('<a href=\"' + data.link +'\" target=\"_blank\">More information about this region</a>');
 };
 
+svg.append("g")
+	.attr("class", "axis")
+	.attr("transform", "translate(0," + h + ")")
+	.call(xAxis1);
+
+svg.append("g")
+	.attr("class", "axis")
+	.attr("transform", "translate("+ (w / 2) + "," + h + ")")
+	.call(xAxis2);
+
+svg.append("g")
+	.attr("class", "axis")
+	.call(yAxis);
+
+svg.append("text")
+	.attr("x", w / 2)
+	.attr("y", h + (margin.top))
+	.style("text-anchor", "middle")
+	.text("Teenage Population Percentage (%)");
+
 d3.select(".country_code").on('change', function(){
   	var data = eval(d3.select(this).property('value'));
   	changeBarChart(data);
 });
+
+d3.select(".bubble_chart")
+  	.append("text");
 
 d3.csv("data/IHME-data-teens-americas.csv", function(error, data) {
 	if (error) {
@@ -363,8 +340,8 @@ d3.csv("data/IHME-data-teens-americas.csv", function(error, data) {
 			}
 		});
 		//initialize chart looking at USA
-		updateBarChart(102);
 		updateBubbleChart();
+		updateBarChart(102);
 	}
 });
 
